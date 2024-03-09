@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Create</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        label {
+            color: #666;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type=text],
+        input[type=date],
+        input[type=time],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            padding: 10px;
+            background-color: #5c85d6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type=submit]:hover {
+            background-color: #8fb2eb;
+        }
+
+        br {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+<form action="Create.html" method="post">
+    <h1>Create Event</h1>
+    <label for="title">Event Title:</label>
+    <input type="text" id="title" name="title" required><br><br>
+
+    <label for="category">Category:</label>
+    <select id="category" name="category" required>
+        <option value="">Please choose an option</option>
+        <option value="studySession">Study Session</option>
+        <option value="workshop">Workshop</option>
+        <option value="discussion">Discussion</option>
+        <option value="recreational">Recreational Activity</option>
+
+    </select><br><br>
+
+    <label for="start-date">Start Date of Event:</label>
+    <input type="date" id="start-date" name="start-date" required><br><br>
+
+    <label for="start-time">Start Time:</label>
+    <input type="time" id="start-time" name="start-time" required><br><br>
+
+    <label for="end-date">End Date of Event:</label>
+    <input type="date" id="end-date" name="end-date" required><br><br>
+
+    <label for="end-time">End Time:</label>
+    <input type="time" id="end-time" name="end-time" required><br><br>
+
+    <input type="submit" value="Create Event">
+</form>
+</body>
+</html>
