@@ -1,0 +1,8 @@
+{
+  "uid": 1,
+  "name": "Anna",
+  "yearOfGrade": 3,
+  "major": "Computer Science",
+  "interests": ["Coding", "AI", "Robotics"],
+  "email": "anna@gmail.com"
+}
