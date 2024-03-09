@@ -1,44 +1,4 @@
-/*body {*/
-/*    font-family: Arial, sans-serif;*/
-/*}*/
 
-/*ul {*/
-/*    list-style-type: none;*/
-/*    margin: 0;*/
-/*    padding: 0;*/
-/*}*/
-
-/*.profile-container {*/
-/*    position: relative;*/
-/*    width: 200px; !* Adjust based on your image size *!*/
-/*    display: inline-block; !* Makes the container wrap the content *!*/
-/*}*/
-
-/*.profile-pic {*/
-/*    width: 100%;*/
-/*    height: auto;*/
-/*    cursor: pointer; !* Changes the cursor to indicate it's clickable *!*/
-/*}*/
-
-/*.profile-info {*/
-/*    position: absolute;*/
-/*    background-color: white;*/
-/*    color: black;*/
-/*    width: 100%;*/
-/*    padding: 10px;*/
-/*    box-sizing: border-box;*/
-/*    border: 1px solid #ddd; !* Optional: adds a border *!*/
-/*    display: none; !* Hide by default *!*/
-/*    top: 100%; !* Position below the image *!*/
-/*    left: 0;*/
-/*    z-index: 1; !* Ensure it's above other content *!*/
-/*}*/
-
-/*.profile-container:hover .profile-info {*/
-/*    display: block; !* Show on hover *!*/
-/*}*/
-
-/* Basic reset to remove padding, margin, and list styles */
 ul {
     margin: 0;
     padding: 0;
