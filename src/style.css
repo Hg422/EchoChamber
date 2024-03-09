@@ -1,0 +1,120 @@
+/*body {*/
+/*    font-family: Arial, sans-serif;*/
+/*}*/
+
+/*ul {*/
+/*    list-style-type: none;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*.profile-container {*/
+/*    position: relative;*/
+/*    width: 200px; !* Adjust based on your image size *!*/
+/*    display: inline-block; !* Makes the container wrap the content *!*/
+/*}*/
+
+/*.profile-pic {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    cursor: pointer; !* Changes the cursor to indicate it's clickable *!*/
+/*}*/
+
+/*.profile-info {*/
+/*    position: absolute;*/
+/*    background-color: white;*/
+/*    color: black;*/
+/*    width: 100%;*/
+/*    padding: 10px;*/
+/*    box-sizing: border-box;*/
+/*    border: 1px solid #ddd; !* Optional: adds a border *!*/
+/*    display: none; !* Hide by default *!*/
+/*    top: 100%; !* Position below the image *!*/
+/*    left: 0;*/
+/*    z-index: 1; !* Ensure it's above other content *!*/
+/*}*/
+
+/*.profile-container:hover .profile-info {*/
+/*    display: block; !* Show on hover *!*/
+/*}*/
+
+/* Basic reset to remove padding, margin, and list styles */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Container for the navigation bar */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8fb2eb;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Style for the navigation links */
+.container ul {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.container li {
+    margin-right: 20px;
+}
+
+.container a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.container a:hover {
+    background: linear-gradient(
+            to left,
+            rgba(245, 70, 66, 0.75),
+            rgba(8, 83, 156, 0.75));
+}
+
+/* Profile picture styling */
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Profile info styling */
+.profile-info {
+    display: none;
+    position: absolute;
+    background-color: #f8f9fa;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    top: 60px;
+    right: 20px;
+    width: max-content;
+}
+
+.profile-container:hover .profile-info {
+    display: block;
+}
+
+/* Adjust the profile-container for alignment */
+.profile-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile-button {
+    display: flex;
+    align-items: center;
+}
