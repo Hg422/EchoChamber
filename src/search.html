@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Chamber: Search</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+    <ul>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="Create.html">Create</a></li>
+        <li><a href="communityContainer">Community</a></li>
+        <li><a href="chatContainer">Chat</a></li>
+    </ul>
+    <div class="profile-container">
+        <button class="profile-button">
+            <img src="../data/blank-profile-picture.png" alt="Profile Picture" class="profile-pic">
+        </button>
+        <div class="profile-info">
+            <p>Name: Anna</p>
+            <p>Year of Grade: 3</p>
+            <p>Major: Computer Science</p>
+            <p>Interests: Coding, AI, Robotics</p>
+        </div>
+    </div>
+</div>
+<header>
+    <h1>Search for Events</h1>
+</header>
+<div id="Upload" class="content" style="display: block;">
+    <button id = "logoutButton" class="top-right-button" onclick="redirectToLogin()">Logout</button>
+    <label for="createEvent">Create an event:</label>
+    <button type="button" id="createEvent" onclick="redirectCreateEvent()">Create</button>
+</div>
+<form id="eventSearchForm">
+    <label for="deptInput">Title of Event:</label>
+    <input type="text" id="deptInput" name="dept" required>
+    <br>
+    <label>Select Date</label>
+    <div class="date-selector">
+        <label for="start-date">Select Start Date:</label>
+        <input type="date" id="start-date">
+
+        <label for="end-date">Select End Date:</label>
+        <input type="date" id="end-date">
+    </div>
+
+    <fieldset>
+        <legend>Select Category</legend>
+        <input type="checkbox" id="studySession" name="columns" value="studySession">
+        <label for="studySession">Study Session</label>
+
+        <input type="checkbox" id="workshop" name="columns" value="workshop">
+        <label for="workshop">Workshop</label>
+
+        <input type="checkbox" id="discussion" name="columns" value="discussion">
+        <label for="discussion">Discussion</label>
+
+        <input type="checkbox" id="recreational" name="columns" value="recreational">
+        <label for="recreational">Recreational Activity</label>
+    </fieldset>
+
+    <button type="button" id="searchButton">Search</button>
+</form>
+<div id="queryResults">
+    <table id="resultsTable" style="display:none;">
+        <thead>
+        <tr id="resultsTableHeader"></tr>
+        </thead>
+        <tbody id="resultsTableBody"></tbody>
+    </table>
+</div>
+<script type="text/javascript" src="/src/frontend.jsd.js"></script>
+</body>
+</html>
